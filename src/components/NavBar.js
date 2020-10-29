@@ -1,32 +1,90 @@
-import React, { Component } from 'react';
-import 'materialize-css';
-import { NavBar } from 'react-materialize';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Button from '@material-ui/core/Button';
 
-export default class Nav extends Component {
-    render() {
-        return (
-        <nav className="navbar navbar-expand-lg navbar-light mycolor">
-          <nav className="mynavbrand col-8 col-6-md">
-            <div className="nameFont">Stephanie Sevadjian</div>
-          </nav>
-          <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
-            <li className="nav-item">
-              <a className="mynavlink" href="#">
-                About Me
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="mynavlink" href="#">
-                Portfolio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="mynavlink" href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        )
-    }
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    marginBottom: theme.spacing(3),
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
+
+export default function ButtonAppBar() {
+  const classes = useStyles();
+  return (
+    <div className = {classes}>
+      <AppBar position="static">
+        <Toolbar>
+          <Button
+            // component={Link}
+            // to='/'
+            // color="inherit"
+            >
+            About Me
+          </Button>
+          <Button
+            // to='/portfolio'
+            // component={Link}
+            // color="inherit"
+            >
+            Portfolio
+          </Button>
+          <Button
+            // to='/Contact'
+            // component={Link}
+            // color="inherit"
+            >
+            Contact
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 }
+
+// import React, { Component } from 'react';
+// import 'materialize-css';
+// import { NavBar, Tab, NavItem, Tabs, Icon } from 'react-materialize';
+
+// class Nav  {
+//     render() {
+//         return (
+//             <Navbar
+//             alignLinks="right"
+//             brand={<a className="brand-logo" href="#">Logo</a>}
+//             extendWith={<Tabs className="tabs-transparent"><Tab className="white-text" options={{duration: 300, onShow: null, responsiveThreshold: Infinity, swipeable: false}} title="test 1">Test 1</Tab><Tab active className="white-text" options={{duration: 300, onShow: null, responsiveThreshold: Infinity, swipeable: false}} title="test 2">Test 2</Tab><Tab className="white-text" disabled options={{duration: 300, onShow: null, responsiveThreshold: Infinity, swipeable: false}} title="disabled tab">Disabled Tab</Tab><Tab className="white-text" options={{duration: 300, onShow: null, responsiveThreshold: Infinity, swipeable: false}} title="test 4">Test 4</Tab></Tabs>}
+//             id="mobile-nav"
+//             menuIcon={<Icon>menu</Icon>}
+//             options={{
+//               draggable: true,
+//               edge: 'left',
+//               inDuration: 250,
+//               onCloseEnd: null,
+//               onCloseStart: null,
+//               onOpenEnd: null,
+//               onOpenStart: null,
+//               outDuration: 200,
+//               preventScrolling: true
+//             }}
+//           >
+//             <NavItem onClick={function noRefCheck(){}}>
+//               Getting started
+//             </NavItem>
+//             <NavItem href="components.html">
+//               Components
+//             </NavItem>
+//           </Navbar>
+//         )
+//     }
+// }
+
+// export { Nav }
