@@ -23,6 +23,7 @@ export default function ButtonAppBar() {
   return (
     <div className = {classes}>
       <AppBar position="static">
+      <h1>Stephanie Sevadjian</h1>
         <Toolbar>
           <Button
             // component={Link}
