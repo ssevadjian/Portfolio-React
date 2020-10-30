@@ -13,8 +13,39 @@ function App() {
       <div class="bg_image">
         <Navbar />
         <Particles 
-                params={{
-                    particles: {
+                options={{
+                  interactivity: {
+                    detectsOn: "canvas",
+                    events: {
+                      onClick: {
+                        enable: true,
+                        mode: "push",
+                      },
+                    onHover: {
+                      enable: true,
+                      mode: "repulse",
+                    },
+                    resize: true,
+                  },
+                  modes: {
+                    bubble: {
+                      distance: 400,
+                      duration: 2,
+                      opacity: 0.8,
+                      size: 40,
+                    },
+                    push: {
+                      quantity: 4,
+                    },
+                    repulse: {
+                      distance: 200,
+                      duration: 0.4,
+                    },
+                  },
+                },
+                // }},
+                // params={{
+                  particles: {
                       collisions: {
                         enable: true,
                       },
@@ -26,6 +57,11 @@ function App() {
                         speed: 1,
                         straight: false,
                       },
+                      size: {
+                        random: true,
+                        value: 2,
+                      },
+                      detectRetina: true,
                   }
                 }}
           />
