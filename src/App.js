@@ -12,6 +12,14 @@ function App() {
     <Router>
       <div class="bg_image">
         <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+          <Route component={NoMatch} />
+        </Switch>
+        <Footer />
         <Particles 
                 options={{
                   interactivity: {
@@ -43,9 +51,10 @@ function App() {
                     },
                   },
                 },
-                // }},
-                // params={{
                   particles: {
+                      color: {
+                        value: "#3cd1c2",
+                      },
                       collisions: {
                         enable: true,
                       },
@@ -65,14 +74,14 @@ function App() {
                   }
                 }}
           />
-        <Switch>
+        {/* <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
           <Route component={NoMatch} />
         </Switch>
-        <Footer />
+        <Footer /> */}
       </div>
     </Router>
   );
