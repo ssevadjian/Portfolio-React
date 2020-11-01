@@ -32,12 +32,18 @@
 }
 
 .contactImg{
+    background-color: black;
     background-image: url('https://d3iqwsql9z4qvn.cloudfront.net/wp-content/uploads/sites/5/2018/05/10084432/Color-splash-592x402.png');
     padding-top: 5%;
     padding-bottom: 17%;    
 }
 
-.imageOp{
-    opacity: 100;
-    
+.projectImg{
+    background-image: url('https://miro.medium.com/max/1400/0*UKuoeRUVTPBPe9Pf');
+    background-size: 100%;
+    padding: 5%;
+}
+
+#div{
+    padding: 20px;
 }
