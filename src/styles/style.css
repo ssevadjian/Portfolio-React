@@ -3,15 +3,32 @@
     font-family: 'Cinzel Decorative';
 }
 
+.aboutTxt{
+    color: #BECDFA;
+    font-family: 'Kanit';
+    font-size: 24px;
+}
+
 .coverPage{
     background-color: black;
     padding-top: 17%;
     padding-bottom: 17%;    
 }
 
+.aboutBg{
+    background-color: black;
+    padding-top: 12%;
+    padding-bottom: 14%;
+
+}
+
 .homeImg{
     background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Flovepik.com%2Fimage-400787876%2Fwater-color-splash.html&psig=AOvVaw3lxWPHlvc0DxL5a2GsaWiF&ust=1604282192659000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiPx4Of4OwCFQAAAAAdAAAAABAg');
-    z-index: 2;
+}
+
+.aboutImg{
+    height: 170px;
+    width: 170px;
 }
 
 .contactImg{
