@@ -22,12 +22,18 @@ export default function NavBar() {
   const classes = useStyles();
   return (
     <div className = {classes}>
-      <AppBar position="static">
-      <h1>Stephanie Sevadjian</h1>
+      <AppBar color="transparent" position="static" >
         <Toolbar>
           <Button
             component={Link}
             to='/'
+            color="inherit"
+            >
+            Home
+          </Button>
+          <Button
+            to='/aboutme'
+            component={Link}
             color="inherit"
             >
             About Me
@@ -37,7 +43,7 @@ export default function NavBar() {
             component={Link}
             color="inherit"
             >
-            Portfolio
+            Projects
           </Button>
           <Button
             to='/contact'

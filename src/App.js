@@ -2,25 +2,26 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import './App.css';
 import Particles from "react-tsparticles";
 import Home from './../src/pages/Home';
+import AboutMe from './../src/pages/AboutMe';
 import Portfolio from "./../src/pages/Portfolio";
 import Contact from "./../src/pages/Contact";
 import NoMatch from "./../src/pages/NoMatch";
 import Navbar from './components/NavBar';
 import Footer from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
-      <div class="bg_image">
+      <div>
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/aboutme" component={AboutMe} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
           <Route component={NoMatch} />
         </Switch>
-        <Footer />
-        <Particles 
+        {/* <Particles 
                 options={{
                   interactivity: {
                     detectsOn: "canvas",
@@ -73,7 +74,8 @@ function App() {
                       detectRetina: true,
                   }
                 }}
-          />
+          /> */}
+          <Footer />
         {/* <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />

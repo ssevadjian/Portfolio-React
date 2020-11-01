@@ -8,9 +8,10 @@
 }
 
 .bg_image{
-  background-image: url('./homepagebg.jpg');
+  background-image: url('./auroragalaxy.jpg');
+  /* background-image: url('./homepagebg.jpg'); */
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .center {
