@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import groupProject1 from '../../src/images/groupProject1image.png';
+import groupProject1 from '../../src/images/weatherDash.png';
 import './portfolioCardMedia.css';
 
 const useStyles = makeStyles({
@@ -34,19 +34,19 @@ export default function MediaCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Dinner and a Movie
+            Weather App
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Some text....
+          Everyone always needs a quick way of knowing what the weather's going to be on any given day in any given area. Enter in any city to see the 5 day forecast here: <a href="https://ssevadjian.github.io/Weather-App/" target="_blank">Weather App</a>
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          GitHub
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Like
         </Button>
       </CardActions>
     </Card>

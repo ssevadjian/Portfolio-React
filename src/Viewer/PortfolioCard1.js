@@ -30,23 +30,23 @@ export default function MediaCard() {
           component="img"
           height="140"
           image={groupProject1}
-          title="Contemplative Reptile"
+          title="Night In"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Dinner and a Movie
+            Night In
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Some text....
+          This app takes the decision-making out of the night, so you can focus more on just enjoying it. Check us out here: <a href="https://tuanasaurus.github.io/groupProject1DinnerMovie/" target="_blank">Night In</a>
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          GitHub
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Like
         </Button>
       </CardActions>
     </Card>
